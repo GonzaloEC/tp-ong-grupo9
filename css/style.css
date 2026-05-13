@@ -1,0 +1,251 @@
+/*Reseteo*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --color-fondo: #f8f9fa;
+    --color-texto: #212529;
+    --color-primario: #2d6a4f;
+    /* para header, footer */
+    --color-secundario: #d8e2dc;
+    --color-acento: #e67e22;
+    /* para botones */
+    --color-blanco: #ffffff;
+    /* para texto sobre fondos oscuros */
+
+    --fuente-principal: 'Google Sans', sans-serif;
+    --fuente-titulos: 'Fauna One', serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    max-width: auto;
+    margin: 0 auto;
+}
+
+
+/*---- tipografia, titulos ----*/
+p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: var(--color-blanco);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+    color: var(--color-primario);
+    margin: 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: var(--color-acento);
+    margin-bottom: 0.5rem;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+
+/*----ESTRUCTURA SEMANTICA----*/
+
+section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-blanco);
+}
+
+article {
+    background-color: var(--color-blanco);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Info.  de complemento */
+aside {
+    background-color: var(--color-secundario);
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    border-left: 0.31rem solid var(--color-primario);
+    /* Una barrita verde al costado */
+    font-style: italic;
+}
+
+/* Lista ordenada(mision, valores, ...) y componentes(ej:img)*/
+ol {
+    margin: 1.25rem 0 1.25rem 2.5rem;
+    /* Margen a la izquierda para que se vean los números */
+    color: var(--color-texto);
+}
+
+ol li {
+    margin-bottom: 0.62rem;
+    /* Espaciado entre cada ítem de la lista */
+    padding-left: 0.5rem;
+}
+
+/* Estilo para la lista de descripción (Estructura Organizativa) */
+dl {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: var(--color-fondo);
+    /* Un tono gris claro para resaltar */
+    border-radius: 0.5rem;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--color-primario);
+    /* Verde para el nombre del equipo */
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+dt::before {
+    content: "🐾 ";
+    /* emoji como una especie de "item" */
+}
+
+dd {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: var(--color-texto);
+}
+
+hr {
+    /* grosor y color verde */
+    height: 0.125rem;
+    background-color: var(--color-primario);
+
+    /* margen para separar los contenidos(superior e inferior)*/
+    margin: 2.5rem 0;
+
+    /* acorto y centro el hr */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 1.5rem 0;
+}
+
+/*---- HEADER & FOOTER ----*/
+#main-footer {
+    margin-top: 3rem;
+}
+
+
+#main-header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 2rem;
+}
+
+#main-footer {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 1.5rem 2rem .2rem 2rem;
+}
+
+#main-footer hr {
+    width: 100%;
+}
+
+#main-footer section p {
+    background-color: none;
+    color: var(--color-texto);
+}
+
+
+/*---- MENU-NAVEGACION ----*/
+
+#main-nav ul {
+    list-style: none;
+    /*saca el item de lista */
+    margin-top: .8rem;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    /*para poneros en fila(1-2-3-4...)*/
+
+    /* Aplicamos el espaciado entre items */
+    margin: 0 1rem;
+}
+
+#main-nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#main-nav a:hover {
+    color: var(--color-acento);
+}
+
+/* ----Formulario---- */
+
+/* REQUISITO: Inputs y textarea con borde su borde y su padding
+   class .input-form (text, email, tel, textarea) */
+input-form {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    border: 0.06rem solid var(--color-primario);
+    border-radius: 0.25rem;
+    display: block;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* Estilo para los botones */
+.btn-input {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 0.75rem 1.56rem;
+    border: none;
+    border-radius: 0.31rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-input:hover {
+    background-color: #d35400;
+}
+
+/* ----- Tabla ----- */
+
+
+thead {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+th,
+td {
+    border: 0.06rem solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
