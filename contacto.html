@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huellas del Oeste | Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -32,13 +37,16 @@
                     <legend>Información Personal</legend>
 
                     <label for="nombre">Nombre y Apellido:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required minlength="3">
+                    <input type="text" id="nombre" name="nombre" class="input-form" placeholder="Juan Pérez" required
+                        minlength="3">
 
                     <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    <input type="email" id="email" name="email" class="input-form" placeholder="ejemplo@correo.com"
+                        required>
 
                     <label for="telefono">WhatsApp / Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="11 1234 5678" required>
+                    <input type="tel" id="telefono" name="telefono" class="input-form" placeholder="11 1234 5678"
+                        required>
                 </fieldset>
 
                 <!-- seleccion para elegir el motivo del contacto -->
@@ -60,8 +68,8 @@
                 <fieldset>
                     <legend>Detalles adicionales</legend>
                     <label for="mensaje">Contanos más sobre tu solicitud:</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí aquí los detalles..."
-                        required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="6" class="input-form"
+                        placeholder="Escribí aquí los detalles..." required></textarea>
                 </fieldset>
 
                 <!-- aca esta los terminos y botones para enviar o limpiar form -->
@@ -70,8 +78,8 @@
                     <label for="terminos">Acepto que mis datos sean procesados para esta solicitud.</label>
 
                     <br><br>
-                    <button type="submit">Enviar Solicitud</button>
-                    <button type="reset">Limpiar Formulario</button>
+                    <button type="submit" class="btn-input">Enviar Solicitud</button>
+                    <button type="reset" class="btn-input">Limpiar Formulario</button>
                 </footer>
             </form>
         </section>
