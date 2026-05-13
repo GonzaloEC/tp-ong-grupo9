@@ -182,6 +182,9 @@ img {
     list-style: none;
     /*saca el item de lista */
     margin-top: .8rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content:flex-end;
 }
 
 #main-nav ul li {
@@ -217,6 +220,8 @@ input-form {
     font-family: inherit;
     font-size: 1rem;
 }
+
+
 
 /* Estilo para los botones */
 .btn-input {
