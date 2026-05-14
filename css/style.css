@@ -177,14 +177,28 @@ img {
 
 
 /*---- MENU-NAVEGACION ----*/
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    /*para que "logo/titulo" este a la par del menu de navegacion*/
+}
+
+#main-header h1 {
+    margin: 0rem;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #main-nav ul {
     list-style: none;
     /*saca el item de lista */
-    margin-top: .8rem;
+    margin-top: 0rem;
     display: flex;
     gap: 1.5rem;
-    justify-content:flex-end;
 }
 
 #main-nav ul li {
