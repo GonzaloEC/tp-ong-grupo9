@@ -143,7 +143,8 @@ img {
     height: auto;
     border-radius: 0.5rem;
     display: block;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
+    /*con el auto, centro el contenido*/
 }
 
 /*---- HEADER & FOOTER ----*/
