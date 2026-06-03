@@ -223,16 +223,68 @@ img {
 
 /* REQUISITO: Inputs y textarea con borde su borde y su padding
    class .input-form (text, email, tel, textarea) */
-input-form {
+fieldset {
+    border: 1px solid var(--color-secundario);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-fondo);
+}
+
+legend {
+    font-weight: bold;
+    color: var(--color-primario);
+    padding: 0 10px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-form,
+select {
     width: 100%;
-    padding: 0.75rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1.25rem;
-    border: 0.06rem solid var(--color-primario);
+    padding: 0.8rem;
+    border: 1px solid #ccc;
     border-radius: 0.25rem;
     display: block;
     font-family: inherit;
     font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+
+.form-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.form-footer label {
+    display: inline;
+    /* Para que quede al lado del checkbox */
+    font-weight: normal;
+}
+
+/* Botones */
+.btn-input {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.31rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0.5rem;
+}
+
+.btn-input:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
 }
 
 
@@ -240,18 +292,3 @@ input-form {
 
 
 /* Estilo para los botones */
-.btn-input {
-    background-color: var(--color-acento);
-    color: var(--color-blanco);
-    padding: 0.75rem 1.56rem;
-    border: none;
-    border-radius: 0.31rem;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-.btn-input:hover {
-    background-color: #d35400;
-}
