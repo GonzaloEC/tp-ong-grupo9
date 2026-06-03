@@ -31,7 +31,7 @@ body {
 }
 
 
-/*---- tipografia, titulos ----*/
+/*tipografia, titulos */
 p {
     margin-bottom: 1rem;
 }
@@ -56,14 +56,13 @@ h3 {
 
 main {
     padding: 2rem 0;
-    background-color: var(--color-fondo);
+    background-color: var(--color-blanco);
 }
 
 
-/*----ESTRUCTURA SEMANTICA----*/
+/*ESTRUCTURA SEMANTICA*/
 
 section {
-    margin-bottom: 2.5rem;
     padding: 1.5rem;
 }
 
@@ -160,23 +159,8 @@ img {
     padding: 2rem;
 }
 
-#main-footer {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
-    padding: 1.5rem 2rem .2rem 2rem;
-}
 
-#main-footer hr {
-    width: 100%;
-}
-
-#main-footer section p {
-    background-color: none;
-    color: var(--color-texto);
-}
-
-
-/*---- MENU-NAVEGACION ----*/
+/*MENU-NAVEGACION*/
 #main-header {
     display: flex;
     justify-content: space-between;
@@ -219,7 +203,7 @@ img {
     color: var(--color-acento);
 }
 
-/* ----Formulario---- */
+/*Formulario */
 
 /* REQUISITO: Inputs y textarea con borde su borde y su padding
    class .input-form (text, email, tel, textarea) */
@@ -288,7 +272,104 @@ select {
 }
 
 
+/*FOOTER */
+
+#main-footer {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    padding: 3rem 2rem 0 2rem;
+}
+
+.footer-separator {
+    width: 100%;
+    border-top: 1px solid var(--color-blanco);
+    margin: 0 0 1rem 0;
+}
+
+/* contenedor de los sections */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    /* Para que en celulares se apilen una abajo de otra */
+    justify-content: space-between;
+    gap: 30px;
+}
 
 
+/* Cada columna adentro del contenedor */
+.footer-columns section {
+    flex: 1;
+    min-width: 250px;
+}
 
-/* Estilo para los botones */
+/* saco el margen y padding del titulo de horarios */
+#horario h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para textos y los enlaces */
+#main-footer h2,
+#main-footer h3 {
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+    margin-bottom: .9rem;
+    border: none;
+    font-family: var(--fuente-principal);
+}
+
+#main-footer p,
+#main-footer dd {
+    color: #cccccc;
+    font-size: 0.95rem;
+}
+
+#main-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-footer li {
+    margin-bottom: 10px;
+}
+
+#main-footer dl {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+#main-footer dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#main-footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#main-footer a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIÓN COPYRIGHT:*/
+.copyright {
+    text-align: center;
+    margin-top: .9rem;
+    padding-top: .9rem;
+    /* Espacio entre la línea gris y el texto */
+    padding-bottom: .9rem;
+    border-top: 1px solid var(--color-blanco);
+}
+
+.copyright p {
+    color: var(--color-texto);
+    font-size: .85rem;
+    margin: 0;
+
+}
