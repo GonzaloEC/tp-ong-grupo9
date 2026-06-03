@@ -56,6 +56,7 @@ h3 {
 
 main {
     padding: 2rem 0;
+    background-color: var(--color-fondo);
 }
 
 
@@ -64,7 +65,6 @@ main {
 section {
     margin-bottom: 2.5rem;
     padding: 1.5rem;
-    background-color: var(--color-blanco);
 }
 
 article {
@@ -237,6 +237,8 @@ input-form {
 
 
 
+
+
 /* Estilo para los botones */
 .btn-input {
     background-color: var(--color-acento);
@@ -252,19 +254,4 @@ input-form {
 
 .btn-input:hover {
     background-color: #d35400;
-}
-
-/* ----- Tabla ----- */
-
-
-thead {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
-}
-
-th,
-td {
-    border: 0.06rem solid #ccc;
-    padding: 0.75rem;
-    text-align: left;
 }
