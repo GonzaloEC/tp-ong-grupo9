@@ -92,6 +92,7 @@ aside {
     font-style: italic;
 }
 
+
 /* Lista ordenada(mision, valores, ...) y componentes(ej:img)*/
 ol {
     margin: 1.25rem 0 1.25rem 2.5rem;
@@ -155,62 +156,6 @@ img {
     display: block;
     margin: 1.5rem auto;
     /*con el auto, centro el contenido*/
-}
-
-/*---- HEADER & FOOTER ----*/
-#main-footer {
-    margin-top: 3rem;
-}
-
-
-#main-header {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
-    padding: 2rem;
-}
-
-
-/*MENU-NAVEGACION*/
-#main-header {
-    display: flex;
-    justify-content: space-between;
-    /*para que "logo/titulo" este a la par del menu de navegacion*/
-}
-
-#main-header h1 {
-    margin: 0rem;
-}
-
-#main-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#main-nav ul {
-    list-style: none;
-    /*saca el item de lista */
-    margin-top: 0rem;
-    display: flex;
-    gap: 1.5rem;
-}
-
-#main-nav ul li {
-    display: inline-block;
-    /*para poneros en fila(1-2-3-4...)*/
-
-    /* Aplicamos el espaciado entre items */
-    margin: 0 1rem;
-}
-
-#main-nav a {
-    color: var(--color-blanco);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#main-nav a:hover {
-    color: var(--color-acento);
 }
 
 /*Formulario */
@@ -308,8 +253,7 @@ select {
 
 /* Cada columna adentro del contenedor */
 .footer-columns section {
-    flex: 1;
-    min-width: 250px;
+    flex: 1 1 250px;
 }
 
 /* saco el margen y padding del titulo de horarios */
@@ -378,8 +322,66 @@ select {
 }
 
 .copyright p {
-    color: var(--color-texto);
+    color: #cccccc;
     font-size: .85rem;
     margin: 0;
+}
 
+.badge-adopcion {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 6px 14px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+
+/* Bootstrap*/
+
+/* navbar del color primario */
+.navbar {
+    background-color: var(--color-primario);
+    padding: 1rem 2rem;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+/* para pintar color naranja cuando se pasa el mouse, o este "activa" la seccion de la pagina */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-acento);
+}
+
+/* uso con el id para "sobreescribir" */
+#rescatados article {
+    background-color: transparent;
+    margin-bottom: 0rem;
+    border-radius: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+/* Tamaño fijo y uniforme para las fotos de los perritos */
+.img-rescatado {
+    height: 370px;
+    object-fit: cover;
+    /*logro que no se estire la foto*/
+    width: 100%;
+    margin-top: 0rem;
+}
+
+/* Estilo personalizado para los nombres de las tarjetas */
+#rescatados .card-title {
+    font-family: var(--fuente-titulos);
+    color: var(--color-primario);
+    font-weight: bold;
+    font-size: 1.4rem;
 }
