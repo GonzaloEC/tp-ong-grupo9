@@ -16,16 +16,26 @@
 
 <body>
     <!--header section, menu navegacion-->
-    <header id="main-header">
-        <h1>Huellas del Oeste</h1>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="programas.html">Programas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#main-footer">Horarios</a></li>
-            </ul>
+    <header id="main-header" class="sticky-top">
+        <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-3" href="index.html">Huellas del Oeste</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#main-footer">Horarios</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -37,23 +47,38 @@
                 en zona oeste.</p>
             <img src="./img/imagen-inicio.png" alt="Perro rescatado feliz en su nuevo hogar">
 
-            <p><a href="#como-ayudar">¿Querés saber cómo colaborar?</a></p>
+            <a href="#como-ayudar" class="text-decoration-none btn-input inicio-btn">¿Querés saber cómo colaborar?</a>
         </section>
 
 
         <section id="rescatados">
             <h2>Nuestros últimos rescatados</h2>
-            <div class="contenedor-rescatados">
-                <article>
-                    <h3>Chicho</h3>
-                    <img src="./img/chicho-perro.png" alt="Perro mestizo negro y café">
-                    <p>Rescatado en la estación Hurlingham. Ya está listo para encontrar una familia.</p>
+            <div class="contenedor-rescatados row g-4">
+
+                <article class="col-12 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <span class="badge-adopcion">¡En Adopción!</span>
+                        <img src="./img/chicho-perro.png" class="card-img-top img-rescatado"
+                            alt="Perro mestizo negro y café">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Chicho</h3>
+                            <p class="card-text">Rescatado en la estación Hurlingham. Ya está listo para encontrar una
+                                familia.</p>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <h3>Mora</h3>
-                    <img src="./img/mora-perro.png" alt="Cachorra blanca">
-                    <p>Encontrada en una plaza de Morón. En etapa de vacunación.</p>
+
+                <article class="col-12 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 position-relative">
+                        <span class="badge-adopcion">¡En Adopción!</span>
+                        <img src="./img/mora-perro.png" class="card-img-top img-rescatado" alt="Cachorra blanca">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Mora</h3>
+                            <p class="card-text">Encontrada en una plaza de Morón. En etapa de vacunación.</p>
+                        </div>
+                    </div>
                 </article>
+
             </div>
         </section>
 
@@ -61,7 +86,7 @@
             <h2>Tu ayuda cambia vidas</h2>
             <p>Existen muchas formas de ser parte de <strong>Huellas del Oeste</strong>. Podés adoptar, ser hogar de
                 tránsito o participar de nuestras jornadas de castración.</p>
-            <a href="programas.html">Ver nuestros programas</a>
+            <a href="programas.html" class="btn-input text-decoration-none d-inline-block">Ver nuestros programas</a>
         </section>
 
         <section>
@@ -111,6 +136,9 @@
             <p>&copy; 2026 Huellas del Oeste</p>
         </section>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
