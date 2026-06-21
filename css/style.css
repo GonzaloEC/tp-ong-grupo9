@@ -92,7 +92,6 @@ aside {
     font-style: italic;
 }
 
-
 /* Lista ordenada(mision, valores, ...) y componentes(ej:img)*/
 ol {
     margin: 1.25rem 0 1.25rem 2.5rem;
@@ -139,10 +138,8 @@ hr {
     /* grosor y color verde */
     height: 0.125rem;
     background-color: var(--color-primario);
-
     /* margen para separar los contenidos(superior e inferior)*/
     margin: 2.5rem 0;
-
     /* acorto y centro el hr */
     width: 50%;
     margin-left: auto;
@@ -152,7 +149,7 @@ hr {
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
     display: block;
     margin: 1.5rem auto;
     /*con el auto, centro el contenido*/
@@ -193,8 +190,8 @@ select {
     font-family: inherit;
     font-size: 1rem;
     transition: border-color 0.3s;
+    resize: none;
 }
-
 
 .form-footer {
     text-align: center;
@@ -302,7 +299,7 @@ select {
 }
 
 #main-footer a {
-    color: #3498db;
+    color: var(--color-blanco);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -314,11 +311,6 @@ select {
 /* SECCIÓN COPYRIGHT:*/
 .copyright {
     text-align: center;
-    margin-top: .9rem;
-    padding-top: .9rem;
-    /* Espacio entre la línea gris y el texto */
-    padding-bottom: .9rem;
-    border-top: 1px solid var(--color-blanco);
 }
 
 .copyright p {
