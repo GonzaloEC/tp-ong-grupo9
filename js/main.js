@@ -1,0 +1,14 @@
+const botonColaborar = document.querySelector(".inicio-btn")
+const seccionAyuda = document.getElementById("como-ayudar")
+
+
+const botonProgramas = document.querySelector(".btn-programas")
+
+botonColaborar.addEventListener('click', function (e) {
+    e.preventDefault()
+    seccionAyuda.scrollIntoView({ behavior: 'smooth' })
+})
+
+botonProgramas.addEventListener('click', function () {
+    window.location.href = 'programas.html'
+})
