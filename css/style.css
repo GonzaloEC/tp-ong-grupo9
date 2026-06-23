@@ -73,7 +73,9 @@ main ul li {
 
 section {
     padding: 1.5rem;
+    scroll-margin-top: 80px;
 }
+
 
 article {
     background-color: var(--color-blanco);
