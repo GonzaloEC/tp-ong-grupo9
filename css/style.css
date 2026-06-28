@@ -29,6 +29,24 @@ body {
     margin: 0 auto;
 }
 
+/*Modo Oscuro*/
+body.oscuro {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+body.oscuro header {
+    background-color: #850606;
+}
+
+body.oscuro .card {
+    background-color: #1a1a1a;
+    border-color: #444444;
+}
+
+body.oscuro .card-text {
+    color: #f5f5f5;
+}
 
 /*tipografia, titulos */
 p {
