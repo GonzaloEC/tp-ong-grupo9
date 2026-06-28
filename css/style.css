@@ -355,7 +355,7 @@ select {
 }
 
 /* uso con el id para "sobreescribir" */
-#rescatados article {
+#rescatados-index article {
     background-color: transparent;
     margin-bottom: 0rem;
     border-radius: 0rem;
@@ -373,7 +373,7 @@ select {
 }
 
 /* Estilo personalizado para los nombres de las tarjetas */
-#rescatados .card-title {
+#rescatados-index .card-title {
     font-family: var(--fuente-titulos);
     color: var(--color-primario);
     font-weight: bold;
