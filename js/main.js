@@ -1,5 +1,5 @@
 const botonColaborar = document.querySelector(".inicio-btn")
-const seccionAyuda = document.getElementById("como-ayudar")
+const seccionAyuda = document.getElementById("como-ayudar-index")
 
 
 const botonProgramas = document.querySelector(".btn-programas")
