@@ -32,15 +32,15 @@ body {
 /*Modo Oscuro*/
 body.oscuro {
     background-color: #1a1a1a;
-    color: var(--color-blanco);
+    color: #f5f5f5;
 }
 
 body.oscuro p {
-    color: var(--color-blanco);
+    color: #f5f5f5;
 }
 
 body.oscuro h1 {
-    color: var(--color-blanco);
+    color: #f5f5f5;
 }
 
 body.oscuro main {
@@ -48,7 +48,7 @@ body.oscuro main {
 }
 
 body.oscuro main ol {
-    color: var(--color-blanco);
+    color: #f5f5f5;
 }
 
 body.oscuro article {
@@ -60,7 +60,15 @@ body.oscuro aside {
 }
 
 body.oscuro fieldset {
-    background-color: #1a1a1a;
+    background-color: #161414;
+}
+
+body.oscuro dl {
+    background-color: var(--color-texto);
+}
+
+body.oscuro dd {
+    color: #f5f5f5;
 }
 
 /*tipografia, titulos */
