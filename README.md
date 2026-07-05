@@ -33,6 +33,6 @@ El desarrollo de este sitio fue realizado de manera colaborativa por:
 ## ⚡ Etapa 4: Interactividad 
 
 * Archivo `js/main.js` vinculado correctamente al final del `body`.
-* Funcionalidad implementada: 
+* Funcionalidad implementada: Theme Switcher
 * Código funcionando sin errores en la consola.
 
