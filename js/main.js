@@ -1,6 +1,6 @@
 // Modo Oscuro
 const boton = document.getElementById("btn-modo");
-boton.addEventListener("click", function (e) {
+boton.addEventListener("click", function () {
     document.body.classList.toggle("oscuro");
     if (boton.textContent === "☀ Modo claro") {
         boton.textContent = "🌙 Modo oscuro";
