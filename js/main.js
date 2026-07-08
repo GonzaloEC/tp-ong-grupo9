@@ -25,3 +25,26 @@ botonColaborar.addEventListener('click', function (e) {
 botonProgramas.addEventListener('click', function () {
     window.location.href = 'programas.html'
 });
+
+//
+const formContacto = document.getElementById("contacto");
+const msgContacto = document.getElementById("msg-contacto");
+
+formContacto.addEventListener("click", (e) => {
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("email").value.trim();
+    const tel = document.getElementById("telefono").value.trim();
+    const motivo = document.getElementById("motivo").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    if (!nombre || !correo || !tel || !motivo || !mensaje) {
+        msgContacto.textContent = "Completa todos los campos para continuar.";
+        msgContacto.className = "error";
+        return;
+    }
+
+    msgContacto.textContent = `¡Gracias ${nombre}! Tu pedido ya fue recibido.`;
+    msgContacto.className = "exito";
+    
+    formContacto.reset();
+});
